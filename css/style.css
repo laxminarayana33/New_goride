@@ -1728,7 +1728,7 @@ select:focus {
     padding: 37px 0;
 }
 .header-upper-right .call-us-now .icon{
-    width: 65px;
+    width: -1px;
 }
 .header-upper-right .call-us-now .icon span:before{
     font-size: 45px;
@@ -1736,8 +1736,9 @@ select:focus {
 }
 .header-upper-right .call-us-now .icon,
 .header-upper-right .call-us-now .title{
-    display: table-cell;
+    /* display: table-cell; */
     vertical-align: middle;
+    text-align: center;
 }
 .header-upper-right .call-us-now .title h6{
     color: #b3beca;
@@ -2394,12 +2395,12 @@ select:focus {
 .fact-counter-area {
     position: relative;
     display: block;
-    padding: 115px 0 70px;
+    /* padding: 115px 0 70px; */
 }
 .fact-counter-area .icon-holder{
     position: absolute;
     left: 65px;
-    top: -165px;
+    top: -135px;
     animation-name: rotateme;
     animation-duration: 60s;
     animation-iteration-count: infinite;
@@ -4986,7 +4987,188 @@ select:focus {
 .boats-skipper-form-area.style2 .boats-skipper-form button {
     color: #ffffff;
 }
+.section-header {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 18px;
+	text-align: center;
+}
+.book-taxi-section {
+	/* background-image: url(./); */
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: black;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	/* position: relative; */
+}
+.book-taxi-section::before {
+	background-color: rgba(0,0,0,0.80); 
+	bottom: 0;
+	content: "";
+	display: inline-block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.book-taxi-section .section-header {
+	margin-bottom: 50px;
+}
+.book-taxi-section form .form-group {
+	margin-bottom: 27px;
+}
+.book-taxi-section form .form-group:last-child {
+	margin-bottom: 0;
+}
+.book-taxi-section form .form-group label {
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 24px;
+}
+.book-taxi-section form .form-group .form-control {
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	color: #cacaca;
+	font-size: 13px;
+	padding: 13px 20px;
+	-webkit-box-shadow: none;
+	-webkit-appearance: none;
+	box-shadow: none;
+	outline: none;
+}
+.section-header h6 {
+	color: #e4af3a;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.52px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.section-header h3 {
+	color: rgb(248, 242, 242);
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 1.44px;
+	margin-bottom: 0;
+	position: relative;
+	text-transform: uppercase;
+}
 
+.book-taxi-section form .form-group.des-to label {
+	display: block;
+	width: 100%;
+}
+.book-taxi-section form .form-group.des-to .form-control {
+	max-width: 235px;
+	display: inline-block;
+}
+.book-taxi-section form .form-group.des-to .form-control.time {
+	max-width: 80px;
+}
+.book-taxi-section form .form-group.des-to span {
+	display: inline-block;
+	margin: 0 10px;
+	color: #fff;
+}
+.book-taxi-section form .form-group select.form-control {
+	height: auto;
+}
+.book-taxi-section form .form-group.car-type label {
+	margin-bottom: 14px;
+}
+.book-taxi-section form .form-group.car-type span {
+	color: #fff;
+	font-size: 13px;
+	text-transform: capitalize;
+	vertical-align: middle;
+}
+.book-taxi-section form .form-group.car-type span {
+	margin-left: 27px;
+	display: inline-block;
+}
+.book-taxi-section form .form-group.car-type span:first-of-type {
+	margin-left: 0;
+}
+.book-taxi-section form .form-group.car-type span input {
+	margin-left: 15px;
+}
+.book-taxi-section form .form-group.car-type span input[type="submit"] {
+	background-color: #f8c12c;
+	border: none;
+	border-radius: 4px;
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 11px 30px 10px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+.book-taxi-section form .form-group.car-type span input[type="submit"]:hover {
+	background-color: #fff;
+}
+.book-taxi-section form .form-group .form-control::-webkit-input-placeholder {
+	color: #cacaca;
+	opacity: 1;
+}
+.book-taxi-section form .form-group .form-control:-moz-placeholder {
+	color: #cacaca;
+	opacity: 1;
+}
+.book-taxi-section form .form-group .form-control::-moz-placeholder {
+	color: #cacaca;
+	opacity: 1;
+}
+.book-taxi-section form .form-group .form-control:-ms-input-placeholder {
+	color: #cacaca;
+	opacity: 1;
+}
+.book-taxi-section.no-bg form .form-group label {
+	color: #222;
+}
+.book-taxi-section.no-bg form .form-group.des-to span {
+	color: #222;
+}
+.book-taxi-section.no-bg form .form-group .form-control {
+	border-color: #e0e0e0;
+	color: #909090;
+}
+.book-taxi-section.no-bg form .form-group.car-type span {
+	color: #909090;
+}
+.book-taxi-section.no-bg form .form-group.car-type span input[type="submit"]:hover {
+	background-color: #222;
+	color: #fff;
+}
+.book-taxi-section.no-bg form .form-group .form-control::-webkit-input-placeholder {
+	color: #909090;
+	opacity: 1;
+}
+.book-taxi-section.no-bg form .form-group .form-control:-moz-placeholder {
+	color: #909090;
+	opacity: 1;
+}
+.book-taxi-section.no-bg form .form-group .form-control::-moz-placeholder {
+	color: #909090;
+	opacity: 1;
+}
+.book-taxi-section.no-bg form .form-group .form-control:-ms-input-placeholder {
+	color: #909090;
+	opacity: 1;
+}
 
 
 /*** 
