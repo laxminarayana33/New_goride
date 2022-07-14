@@ -1300,7 +1300,7 @@ select:focus {
 .sticky-header .logo {
     position: relative;
     display: block;
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 .sticky-header .logo a{
     position: relative;
