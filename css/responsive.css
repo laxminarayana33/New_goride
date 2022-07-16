@@ -1361,7 +1361,7 @@
 }
 .main-menu .navigation>li {
     margin-right: 15px;
-    padding: 40px 0 40px;
+    /* padding: 40px 0 40px; */
 }    
 .menu-right-content {
     float: right;
